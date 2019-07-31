@@ -1,0 +1,86 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: 2019-07-31T09:36:24Z
+  generateName: ys-nginx-web-server-
+  labels:
+    app: ys-nginx-web-server
+  name: ys-nginx-web-server-4bbvk
+  namespace: default
+  resourceVersion: "2960"
+  selfLink: /api/v1/namespaces/default/services/ys-nginx-web-server-4bbvk
+  uid: a9a93256-b376-11e9-ab61-42010a800183
+spec:
+  clusterIP: 10.100.4.36
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 30175
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: ys-nginx-web-server
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {} 	
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: 2019-07-31T09:35:18Z
+  generateName: ys-nginx-web-server-
+  labels:
+    app: ys-nginx-web-server
+  name: ys-nginx-web-server-5wzbl
+  namespace: default
+  resourceVersion: "2758"
+  selfLink: /api/v1/namespaces/default/services/ys-nginx-web-server-5wzbl
+  uid: 8230b926-b376-11e9-ab61-42010a800183
+spec:
+  clusterIP: 10.100.11.164
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: ys-nginx-web-server
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: 2019-07-31T09:36:47Z
+  generateName: ys-nginx-web-server-
+  labels:
+    app: ys-nginx-web-server
+  name: ys-nginx-web-server-t29r6
+  namespace: default
+  resourceVersion: "3202"
+  selfLink: /api/v1/namespaces/default/services/ys-nginx-web-server-t29r6
+  uid: b75b4238-b376-11e9-ab61-42010a800183
+spec:
+  clusterIP: 10.100.3.242
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 32727
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: ys-nginx-web-server
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 34.66.250.122
+

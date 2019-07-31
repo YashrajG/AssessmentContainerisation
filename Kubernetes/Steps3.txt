@@ -1,0 +1,10 @@
+1. Create a bash script that will create an index.html with the name of the pod deploying it. Hence create an image.
+
+2. Create a cluster of nodes.
+
+3. Deploy that cluster with the NGINX image created in Step 1 - from GCR Registry. (Deployment.yaml)
+
+
+4. Add 3 services - ClusterIP, NodePort, LoadBalancer.(services.yaml file given)
+
+5. Visit public IP Address of Load Balancer and refresh to view changes in pod name.

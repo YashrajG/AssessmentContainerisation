@@ -1,0 +1,14 @@
+1. Create a flask application which uses redis to count number of hits on the webpage.
+
+2. Create dockerfile and requirements.txt.
+
+3. Create docker-compose.yml which maps to port 5000.
+
+4. Screenshots show output.
+
+For part 2:
+5. In the YAML file, add a volume attribute to the web-service. The volume will be a path.
+
+6. Any changes made in the code can be dynamically observed on the webpage.
+
+7. Check screenshots for output.

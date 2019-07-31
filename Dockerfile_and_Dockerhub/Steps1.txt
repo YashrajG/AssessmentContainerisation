@@ -1,0 +1,16 @@
+1. Create a dockerfile for creating a custom NGINX image.
+
+2. Write a custom index.html page
+
+3. Edit the default configuration page to point the root at  /usr/share/nginx/html/
+
+4. Build the image, run container at port 8080.
+
+5. run:
+	docker exec -it <container-id> /bin/bash
+
+6. apt-get install nano
+
+7. Output on localhost remains.
+
+8. Push image to various repositories -> dockerhub, ECR, GCR (refer to screenshots)
